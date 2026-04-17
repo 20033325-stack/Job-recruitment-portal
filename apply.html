@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply | Job Recruitment Portal</title>
+    <meta name="description" content="Submit your application through the Job Recruitment Portal.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Job Recruitment Portal</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="apply.html" class="active-page">Apply</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-shell">
+        <section class="page-hero small-hero">
+            <div class="page-hero-content">
+                <span class="hero-kicker">Start Your Journey</span>
+                <h1>Submit Your Application</h1>
+                <p>
+                    Complete the form below to apply for a role and take the next
+                    step in your professional career.
+                </p>
+            </div>
+        </section>
+
+        <section class="content-wrap form-layout">
+            <div class="panel apply-info">
+                <h2>Application Guidance</h2>
+                <p>
+                    Please complete all required fields clearly and accurately.
+                    Make sure your contact information is current so employers can reach you.
+                </p>
+                <ul class="check-list">
+                    <li>Use your professional email address</li>
+                    <li>Select the role you are applying for</li>
+                    <li>Write a short message about your suitability</li>
+                    <li>Review your details before submission</li>
+                </ul>
+            </div>
+
+            <div class="panel form-panel">
+                <form class="application-form" id="applyForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="fullname">Full Name</label>
+                            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="position">Position</label>
+                            <select id="position" name="position">
+                                <option value="">Select a position</option>
+                                <option>Front-End Web Developer</option>
+                                <option>Marketing Coordinator</option>
+                                <option>Human Resources Assistant</option>
+                                <option>UI/UX Designer</option>
+                                <option>Business Analyst Intern</option>
+                                <option>Customer Support Specialist</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Cover Message</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Write a short message about your qualifications and interest in the role"></textarea>
+                    </div>
+
+                    <div class="form-group inline-check">
+                        <input type="checkbox" id="consent" name="consent">
+                        <label for="consent">I confirm that the information provided is accurate.</label>
+                    </div>
+
+                    <button type="submit" class="btn">Submit Application</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Job Recruitment Portal. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
